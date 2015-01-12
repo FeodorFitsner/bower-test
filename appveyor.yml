@@ -1,17 +1,18 @@
 init: 
 - git config --global core.autocrlf input 
 install:
+- npm -g install npm@2
 #- ps: Update-NodeJsInstallation 0.10.35
 #- node --version
-- md npm-cache
-- npm config set cache %appveyor_build_folder%\npm-cache --global
-- npm install gulp bower -g
+#- md npm-cache
+#- npm config set cache %appveyor_build_folder%\npm-cache --global
+#- npm install gulp bower -g
 build_script: 
 - node --version 
 - npm --version 
-- bower --version 
-- npm install 
-- bower install 
+#- bower --version 
+#- npm install 
+#- bower install 
 
 test: off
 deploy: off
