@@ -1,9 +1,9 @@
 init: 
 - git config --global core.autocrlf input 
 install:
-- ps: Update-NodeJsInstallation 0.10.35
-- node --version
-- npm install gulp bower -g 
+#- ps: Update-NodeJsInstallation 0.10.35
+#- node --version
+- npm install gulp bower
 build_script: 
 - node --version 
 - npm --version 
