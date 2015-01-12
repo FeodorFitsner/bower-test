@@ -1,0 +1,13 @@
+init: 
+- git config --global core.autocrlf input 
+install: 
+- npm install gulp bower -g 
+build_script: 
+- node --version 
+- npm --version 
+- bower --version 
+- npm install 
+- bower install 
+
+test: off
+deploy: off
