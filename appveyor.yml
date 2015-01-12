@@ -3,7 +3,9 @@ init:
 install:
 #- ps: Update-NodeJsInstallation 0.10.35
 #- node --version
-- npm install gulp bower
+- md npm-cache
+- npm config set cache %appveyor_build_folder%\npm-cache --global
+- npm install gulp bower -q
 build_script: 
 - node --version 
 - npm --version 
