@@ -7,13 +7,13 @@ install:
 #- node --version
 #- md npm-cache
 #- npm config set cache %appveyor_build_folder%\npm-cache --global
-#- npm install gulp bower -g
+- npm install gulp bower -g
 build_script: 
 - node --version 
 - npm --version 
-#- bower --version 
-#- npm install 
-#- bower install 
+- bower --version 
+- npm install 
+- bower install 
 
 test: off
 deploy: off
