@@ -1,7 +1,7 @@
 init: 
 - git config --global core.autocrlf input 
 install:
-- npm -g install npm@2
+- npm install npm
 #- ps: Update-NodeJsInstallation 0.10.35
 #- node --version
 #- md npm-cache
