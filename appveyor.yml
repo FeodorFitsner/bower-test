@@ -4,12 +4,13 @@ install:
 - npm -g install npm@2
 - set PATH=%APPDATA%\npm;%PATH%
 - ps: npm install gulp bower -g
-build_script: 
+
+test_script: 
 - node --version 
 - npm --version 
 - bower --version 
 - npm install 
 - bower install 
 
-test: off
+build: off
 deploy: off
